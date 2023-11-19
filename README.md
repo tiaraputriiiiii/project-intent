@@ -612,3 +612,13 @@ e. Project Set Alarm
   android:name="com.android.alarm.permission.SET_ALARM" />
 ```
 
+```
+ <activity
+     android:name=".MainActivity"
+     android:exported="true">
+     <intent-filter>
+          <action android:name="android.intent.action.SET_ALARM" />
+          <category android:name="android.intent.category.DEFAULT" />
+     </intent-filter>
+</activity>
+```
