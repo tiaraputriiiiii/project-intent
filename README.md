@@ -375,7 +375,7 @@ public class SianidaActivity extends AppCompatActivity {
 
 d. Project Twoactivity
 
-Reply
+**Reply**
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -439,6 +439,7 @@ Reply
         app:layout_constraintEnd_toStartOf="@+id/button_main"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+```
 
 ```
 package com.tiaraapps;
@@ -501,7 +502,7 @@ public class ReplyActivity extends AppCompatActivity {
 }
 ```
 
-Send
+**Send**
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
