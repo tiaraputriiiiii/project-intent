@@ -686,6 +686,167 @@ public class MainActivity extends AppCompatActivity {
     }
 ```
 
+## f. Project Main
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgmain"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="500dp"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:text="Selamat Datang di aplikasi kami"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnHelloWorld"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="100dp"
+        android:onClick="btnHelloWorld"
+        android:text="@string/hello_world"
+        tools:ignore="UsingOnClickInXml"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/btnProjectCount"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnHelloWorld"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:onClick="btnCount"
+        android:text="@string/toast"
+        tools:ignore="UsingOnClickInXml"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/btnProjectSianida"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnProjectCount"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:onClick="btnSianida"
+        android:scaleType="centerCrop"
+        android:text="@string/sianida"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/btnTwoActivity"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnProjectSianida"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
+        android:onClick="btnTwoActivity"
+        android:text="@string/reply_message"
+        tools:ignore="UsingOnClickInXml"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/btnSetAlarm"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnTwoActivity"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:onClick="btnSetAlarm"
+        android:text="@string/set_alarm"
+        tools:ignore="UsingOnClickInXml"
+        android:scaleType="centerCrop"/>
+
+</RelativeLayout>
+```
+
+```
+package com.tiaraapps;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        findViewById(R.id.btnSetAlarm).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Panggil metode untuk mengatur alarm
+                setAlarm();
+            }
+        });
+    }
+    private void setAlarm() {
+        Intent alarm = new Intent(android.provider.AlarmClock.ACTION_SET_ALARM);
+        startActivity(alarm);
+    }
+
+    public void btnHelloWorld(View view) {
+        Intent helloworld = new Intent(MainActivity.this, HelloActivity.class);
+        startActivity(helloworld);
+    }
+
+    public void btnCount(View view) {
+        Intent count = new Intent(MainActivity.this, ToastActivity.class);
+        startActivity(count);
+    }
+
+    public void btnSianida(View view) {
+        Intent sianida = new Intent(MainActivity.this, SianidaActivity.class);
+        startActivity(sianida);
+    }
+
+    public void btnTwoActivity(View view) {
+        Intent twoact = new Intent(MainActivity.this, ReplyActivity.class);
+        startActivity(twoact);
+    }
+}
+```
 
 **Color**
 
