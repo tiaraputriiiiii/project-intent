@@ -26,7 +26,7 @@ Buatkanlah :
    
 Untuk tampilan Layout Bebas, terima kasih.
 
-a. Project Hello
+## a. Project Hello
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -80,7 +80,7 @@ public class HelloActivity extends AppCompatActivity {
 }
 ```
 
-b. Project Count
+## b. Project Count
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -304,7 +304,7 @@ public class ToastActivity extends AppCompatActivity {
 }
 ```
 
-c. Project Sianida
+## c. Project Sianida
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -373,7 +373,7 @@ public class SianidaActivity extends AppCompatActivity {
 }
 ```
 
-d. Project Twoactivity
+## d. Project Twoactivity
 
 **Reply**
 
@@ -605,7 +605,7 @@ public class SendActivity extends AppCompatActivity {
 }
 ```
 
-e. Project Set Alarm
+## e. Project Set Alarm
 
 ```
 <uses-permission
@@ -621,4 +621,142 @@ e. Project Set Alarm
           <category android:name="android.intent.category.DEFAULT" />
      </intent-filter>
 </activity>
+```
+
+**Color**
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#3700B3</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="colorPrimary">#3F5185</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="birumuda">#ABCBFA</color>
+    <color name="salem">#F8C6E6</color>
+    <color name ="purple">#E3A2ED</color>
+    <color name="hijau">#92A676</color>
+    <color name="biru">#8FC2EA</color>
+    <color name="hijaumuda">#C2E69C</color>
+    <color name="kuning">#FFEB3B</color>
+    <color name="orange">#FF9800</color>
+    <color name="cream">#E6C18A</color>
+    <color name="pink_terang">#ffb6c1</color>
+    <color name="koral">#f08080</color>
+</resources>
+```
+
+**Dimen**
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_reguler">10dp</dimen>
+    <dimen name="line_spacing">5sp</dimen>
+</resources>
+```
+
+***String**
+
+```
+<resources>
+    <string name="app_name">TiaraApps</string>
+    <string name="hello_worldd">Hello World!</string>
+    <string name="button_label_toast">Toast</string>
+    <string name="button_label_count">Count</string>
+    <string name="count_initial_value">1</string>
+    <string name="toast_message">Hello Toast!</string>
+    <string name="article_tittle">Kasus Sianida</string>
+    <string name="article_subtitle">ICE COLD</string>
+    <string name="button_main">Send</string>
+    <string name="editText_main">Enter Your Message Here</string>
+    <string name="text_header">Messege Received</string>
+    <string name="button_second">Reply</string>
+    <string name="editText_second">Enter Your Reply Here</string>
+    <string name="text_header_reply">Reply Received</string>
+    <string name="article_text"> Film dokumenter Ice Cold: Murder, Coffee and Jessica Wongso memaparkan pertanyaan tak terjawab tentang persidangan yang dilalui Jessica Wongso. Dengan menyajikan perspektif baru, film ini hadir bertahun-tahun setelah kematian sahabat Jessica, Wayan Mirna Salihin.
+
+     Film ini menggambarkan bagaimana Jessica yang mengajak teman-temannya, termasuk Mirna, untuk bertemu setelah sekian lama tak berjumpa. Pertemuan di salah satu kafe di mal ibu kota tersebut pun berlangsung lancar, sebelum akhirnya Mirna pingsan sesaat setelah meminum kopi yang sebelumnya dipesan Jessica.
+    Dokumenter ini turut menyajikan rekaman CCTV pada waktu kejadian, berbagai footage berita saat persidangan berlangsung, hingga wawancara eksklusif dengan beberapa sumber, termasuk Jessica Wongso.
+
+    Persidangan atas dugaan pembunuhan Mirna Salihin digelar lima bulan setelah kematiannya. Sidang tersebut melalui 32 kali persidangan dengan menghadirkan puluhan saksi di pengadilan. Hasilnya, Jessica Wongso divonis bersalah atas kematian Mirna dan dijatuhi hukuman 20 tahun penjara.
+    Kasus yang berjalan cukup lama tersebut menyita banyak perhatian dari masyarakat Indonesia. Musababnya, banyak misteri tak terjawab selama rangkaian persidangan yang panjang tersebut. Salah satunya adalah mengenai akses untuk mendapatkan bubuk sianida yang tidak bisa didapatkan oleh orang sembarangan. Selain itu, motif Jessica di balik pembunuhan tersebut pun belum menemukan jawabannya.
+
+    Film dokumenter buatan Netflix ini menyoroti rangkaian persidangan yang saat itu menjadi sidang pertama yang disiarkan secara langsung di berbagai stasiun televisi Indonesia. Selain itu, kasus ini juga diliput secara intens oleh media massa, baik nasional maupun internasional.Tak hanya itu, pihak rumah produksi Beach House Pictures juga berhasil mendapatkan akses untuk mewawancarai Jessica Wongso secara langsung dari balik tahanan. Dalam video trailer yang diluncurkannya, ditampilkan juga sejumlah wawancara eksklusif yang dilakukan dengan beberapa narasumber. Mulai dari ayah dan saudara kembar  Mirna Salihin, pengacara Jessica Wongso, jurnalis yang mendalami kasus tersebut, hingga bagaimana saat itu kasus ini begitu ramai diberitakan oleh media massa Indonesia dan internasional.</string>
+    <string name="button_label_restart">Restart</string>
+    <string name="enter_fibonacci_limit">Masukkan Angka Limit</string>
+    <string name="toast">Toast</string>
+    <string name="hello_world">Hello World!!</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="sianida">Sianida</string>
+    <string name="reply_message">Reply Message</string>
+    <string name="send_message">Send Message</string>
+    <string name="Set_alarm">SET ALARM</string>
+</resources>
+```
+
+**AndroidMenifest**
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission
+        android:name="com.android.alarm.permission.SET_ALARM" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Material3.Light"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SET_ALARM" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".HelloActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ReplyActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".SendActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ToastActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".SianidaActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
 ```
