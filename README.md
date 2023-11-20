@@ -65,7 +65,7 @@ public class SplashScreen extends AppCompatActivity {
         </activity>
 ```
 
-## 2. 
+## 2. Tampilan semua project
 
 ## a. Project Hello
 
