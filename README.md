@@ -623,6 +623,29 @@ public class SendActivity extends AppCompatActivity {
 </activity>
 ```
 
+```
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        findViewById(R.id.btnSetAlarm).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Panggil metode untuk mengatur alarm
+                setAlarm();
+            }
+        });
+    }
+    private void setAlarm() {
+        Intent alarm = new Intent(android.provider.AlarmClock.ACTION_SET_ALARM);
+        startActivity(alarm);
+    }
+```
+
+
 **Color**
 
 ```
