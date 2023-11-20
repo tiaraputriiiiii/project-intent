@@ -26,6 +26,47 @@ Buatkanlah :
    
 Untuk tampilan Layout Bebas, terima kasih.
 
+## 1 Launcher Splash Logo
+
+```
+package com.tiaraapps;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class SplashScreen extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                startActivity(new Intent(SplashScreen.this, MainActivity.class));
+                finish();
+            }
+        }, 2500);
+    }
+}
+```
+
+```
+<activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+```
+
+## 2. 
+
 ## a. Project Hello
 
 ```
