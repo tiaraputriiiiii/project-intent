@@ -985,3 +985,10 @@ public class MainActivity extends AppCompatActivity {
 
 </manifest>
 ```
+
+## Hasil
+
+
+
+https://github.com/tiaraputriiiiii/project-intent/assets/115775237/b0210ea0-ce42-4202-99b6-fad8a704475f
+
